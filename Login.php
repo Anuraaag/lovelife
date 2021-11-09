@@ -4,7 +4,7 @@
         <script>
             function register()
             {
-                window.location="./Register.html";
+                window.location="./Register.php";
             }
             function myFunction() 
                 {
