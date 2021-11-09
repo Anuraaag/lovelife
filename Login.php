@@ -1,11 +1,13 @@
 <html>
     <head>
         <title>Login Page</title>
+                    <!-- hello -->
         <script>
             function register()
             {
                 window.location="./Register.php";
             }
+
             function myFunction() 
                 {
                     var x = document.getElementById("pswd");
@@ -23,6 +25,7 @@
                     }
                 }
         </script>
+
         <style>
             #fields{
             margin:100px 100px 100px 450px;
