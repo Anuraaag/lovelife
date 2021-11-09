@@ -12,7 +12,7 @@
                 }
                    
 
-                formfield=myform.mail;
+                 formfield=myform.mail;
                 if(formfield.value=="")
                 {
                     str+="Please enter your email id.\n"
@@ -127,7 +127,7 @@
         </script>
         <style>
             #fields{
-            margin:100px 100px 100px 450px;
+            margin:50px 100px 100px 450px;
             border:2px solid black;
             display:flex;
             flex-direction:column;
@@ -137,19 +137,20 @@
             height:fit-content;
             padding: 10px;
             position:fixed;
+            font-size: 24px;
             
            
            
             
          }   
 
-         #fields>input{
+         #fields>*{
             margin: 2px 2px 2px 2px;
            
             font-size: 24px;
          }   
          #div2>input{
-            margin: 2px 2px 4px 2px;
+            margin: 2px 2px 2px 2px;
            
             font-size: 24px;
          }   
@@ -157,19 +158,34 @@
              margin: 180px 20px 100px 360px ;
              display: none;
             height:fit-content;
-            width: fit-content;
+            width:fit-content;
+            font-size: medium;
+         }
+         #heading{
+            
+            
+             margin: 50px 200px 50px 250px; 
+             
+            
+            /* margin: 60px 100px 300px 450px;*/
          }
         </style>
     </head>
     <body>
-        
+        <div id="heading">Lets get started</div>
         <form name="myform">  
+            
+                
             <div id="fields">
-            <input type=text placeholder="Name" name="uname" autofocus required/><br>
-            <input type=email placeholder="Email" name="mail" required/><br>
-            <input type=tel  pattern="[0-9]{10}" placeholder="Phone no." name="phone" required/><br>
+            <!--<input type=text placeholder="Name" name="uname" autofocus required/><br>-->
+            
+            Email<br>
+            <input type=email  name="mail" required/>
+            Phone <br>
+            <input type=tel  pattern="[0-9]{10}"  name="phone" required/>
+            Password<br>
             <div id="div2">
-                <input id="pass" type=password placeholder="Password" name="pswd" title='*Password should be greater than 6 characters. &#10*Password should contain atleast one alphabet. &#10*Password should contain atleast one special character such as !(exclamation mark ),.(dot),-(hyphen),_(underscore),&(ampersand),"(double inverted comma). ' required />
+                <input id="pass" type=password  name="pswd" title='*Password should be greater than 6 characters. &#10*Password should contain atleast one alphabet. &#10*Password should contain atleast one special character such as !(exclamation mark ),.(dot),-(hyphen),_(underscore),&(ampersand),"(double inverted comma). ' required />
                 <img  id="vis" onclick="myFunction()" src="./invisible.png" title="Click to show/hide password"width="20px" height="20px">
                 <img src="./info_icon.png" onclick="pass_info()" width="20px" height="20px">
             </div>
@@ -182,6 +198,7 @@
             <input type="button" value="Register" onclick="validate()"/><br>
             <input type="button" value="Login" onclick="login()"/>
         </div>
+    
         </form>
     </body>
 </html>
