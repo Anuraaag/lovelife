@@ -5,14 +5,10 @@
             function validate()
             {
                 var str="";
-                var formfield=myform.uname;
-                if(formfield.value=="")
-                {
-                    str+="Please enter your name.\n"
-                }
+                
                    
 
-                 formfield=myform.mail;
+                 formfield=reg_form.mail;
                 if(formfield.value=="")
                 {
                     str+="Please enter your email id.\n"
@@ -26,7 +22,7 @@
 			        if (pos1 >= 1 && pos2 >(pos1+1) && (pos2<(strEmail.length))) { } else { str+= "Please enter valid email id.\n"; }
                 }
                 
-                formfield=myform.phone;
+                formfield=reg_form.phone;
                 var phn=formfield.value;
                 var count=0;
                 if(phn=="")
@@ -54,7 +50,7 @@
                 }
                 
 
-                formfield=myform.pswd;
+                formfield=reg_form.pswd;
 
                 
                var x=formfield.value;
@@ -84,7 +80,7 @@
                 if(str=="")
                 {
 
-                    document.myform.submit();
+                    document.registration_form.submit();
                 }
                 else
 
@@ -125,79 +121,138 @@
 
 
         </script>
+
         <style>
+            body
+         {
+             background-color: #F5F5DC;
+         }
+             #heading{
+                 
+                padding-left: 60px;
+                position: relative;
+                font-size: 40px;
+                font-style:italic;
+                font-family:'papyrus';
+                background-color: E6E6FA;
+            }
+            #background_image
+            {
+                margin-left: 20px;
+                margin-top: 20px;
+                width:940px;
+                height: 350px;
+            }
+            #form_heading
+         {
+             display: flex;
+             font-weight: bold;
+             font-size: 20px;
+             align-self: center;
+         }
+         #registration_form
+         {
+             display: flex;
+             margin-left: 50px;
+             margin-top: 80px;
+             margin-bottom: 200px;
+             background-color:lightgrey;
+             width: 1230px;
+             height: 400px;
+         }
             #fields{
-            margin:50px 100px 100px 450px;
-            border:2px solid black;
+            background-color:E6E6FA;
+            margin:22px 20px 100px 30px;
+            
+            border:2px solid grey;
+            border-radius: 5px;
             display:flex;
             flex-direction:column;
             align-items:flex-start;
-            justify-items: left;
-            width:370px;
-            height:fit-content;
+            
+            width:fit-content;
+            height:320px;
             padding: 10px;
-            position:fixed;
-            font-size: 24px;
+            
+            font-size: 18px;
             
            
            
             
          }   
 
-         #fields>*{
+         #fields>input{
             margin: 2px 2px 2px 2px;
-           
-            font-size: 24px;
+           width:300px;
+            font-size: 18px;
+            
          }   
-         #div2>input{
+         #div2
+         {
+            display: flex;
+            flex-wrap: nowrap;
+            width: fit-content;
+            
+         }
+       
+         #div2>*,#div3{
+             
             margin: 2px 2px 2px 2px;
-           
-            font-size: 24px;
+            
+            font-size: 18px;
          }   
+        
          #pass_info{ 
-             margin: 180px 20px 100px 360px ;
+             margin: 20px 20px 100px 370px ;
              display: none;
             height:fit-content;
             width:fit-content;
             font-size: medium;
          }
-         #heading{
-            
-            
-             margin: 50px 200px 50px 250px; 
-             
-            
-            /* margin: 60px 100px 300px 450px;*/
-         }
+         
+        #div4
+        {
+           display: flex;
+           flex-wrap: nowrap; 
+        }
+          
         </style>
     </head>
     <body>
-        <div id="heading">Lets get started</div>
-        <form name="myform">  
-            
+        <div id="heading">Love Life</div>
+        
+        
+        <form id="registration_form" name="reg_form">  
+            <img  id="background_image" onclick="" src="./heart_background.jpeg" title="">
                 
             <div id="fields">
-            <!--<input type=text placeholder="Name" name="uname" autofocus required/><br>-->
             
-            Email<br>
-            <input type=email  name="mail" required/>
-            Phone <br>
-            <input type=tel  pattern="[0-9]{10}"  name="phone" required/>
-            Password<br>
-            <div id="div2">
-                <input id="pass" type=password  name="pswd" title='*Password should be greater than 6 characters. &#10*Password should contain atleast one alphabet. &#10*Password should contain atleast one special character such as !(exclamation mark ),.(dot),-(hyphen),_(underscore),&(ampersand),"(double inverted comma). ' required />
-                <img  id="vis" onclick="myFunction()" src="./invisible.png" title="Click to show/hide password"width="20px" height="20px">
-                <img src="./info_icon.png" onclick="pass_info()" width="20px" height="20px">
+                <span id="form_heading">New here! Let's get started</span>
+                 Email:<br>
+                <input type=email  name="mail" autofocus required/>
+                Phone: <br>
+                <input type=tel  pattern="[0-9]{10}"  name="phone" required/>
+                Password:<br>
+                <div id="div2">
+                    <input id="pass" style="width: 300px;" type=password  name="pswd" title='*Password should be greater than 6 characters. &#10*Password should contain atleast one alphabet. &#10*Password should contain atleast one special character such as !(exclamation mark ),.(dot),-(hyphen),_(underscore),&(ampersand),"(double inverted comma). ' required />
+                
+                    <img  id="vis" onclick="myFunction()" src="./invisible.png" title="Click to show/hide password"width="20px" height="20px">
+                    <img  id="pswd_rules" src="./info_icon.png" onclick="pass_info()" width="20px" height="20px">
+            
+                    <dialog id="pass_info" draggable="true">
+                    *Password should be greater than 6 characters.<br>
+                    *Password should contain atleast one alphabet.<br>
+                    *Password should contain atleast one special character such as !(exclamation mark ),.(dot),-(hyphen),_(underscore),&(ampersand),"(double inverted comma). 
+                    </dialog>
             </div>
-            <dialog id="pass_info" draggable="true">
-                *Password should be greater than 6 characters.<br>
-                *Password should contain atleast one alphabet.<br>
-                *Password should contain atleast one special character such as !(exclamation mark ),.(dot),-(hyphen),_(underscore),&(ampersand),"(double inverted comma). 
-
-             </dialog>
-            <input type="button" value="Register" onclick="validate()"/><br>
-            <input type="button" value="Login" onclick="login()"/>
-        </div>
+            <div id="div3"><input type="checkbox" value="Agree" />Hereby agree to <a href="C:\xampp\htdocs\LoveLife\t&c.txt" >terms and conditions</a>.
+            </div>
+            <br><br>
+            <div id="div4">
+            <a href="./Login.php">Already a user?</a>
+            <input style="font-size:18px;margin-left:120px"type="button" value="Register" onclick="validate()"/>
+            </div>
+        
     
         </form>
     </body>
