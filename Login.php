@@ -192,35 +192,33 @@
         </style>
     </head>
     <body>
-    <div id="heading">Love Life</div>
+        <div id="heading">Love Life</div>
         <form id="login_form" name="log_form">
-        <img  id="background_image"  src="./heart_background.jpeg" title=""width="100px" height="100px">
+            <img  id="background_image"  src="./heart_background.jpeg" title=""width="100px" height="100px">
             <div id="fields">
-               <span id="form_heading"> Welcome Back! </span>
-            <input type=text placeholder="Email or Mobile" name="email_mobile"autofocus required /><br>
-            <div id="div2">
-                <input id="pswd" type=password placeholder="Password" required />
-                <img  id="vis" onclick="myFunction()" src="./invisible.png" title="Click to show/hide password"width="20px" height="20px">
+                <span id="form_heading"> Welcome Back! </span>
+                <input type=text placeholder="Email or Mobile" name="email_mobile"autofocus required /><br>
+                
+                <div id="div2">
+                    <input id="pswd" type=password placeholder="Password" required />
+                    <img  id="vis" onclick="myFunction()" src="./invisible.png" title="Click to show/hide password"width="20px" height="20px">
+                </div>
+
+                <a style="margin-left: 100px;" href="">Forgot password? </a> <br><br>
+                <input style="align-self: center;"type="button" onclick="validate()" value="Login"/><br>
+                
+                <div id="div3">
+                    <hr id="hr1"  />
+                    <span style="margin-left: 10px;">or</span>
+                    <hr id="hr2"  />
+                </div>
+                
+                <div>
+                    <a href=""> <img  id="google_icon" style="margin-left: 90px;"onclick="" src="./google_icon.png" title="Click to login using google"width="20px" height="20px"> </a>  
+                    <a href=""> <img  id="fb_icon" style="margin-left: 15px;" onclick="" src="./fb_icon.png" title="Click to login using facebook"width="20px" height="20px"> </a> 
+                    <a href=""> <img  id="twitter_icon" style="margin-left: 15px;" onclick="" src="./twitter_icon.png" title="Click to login using twitter"width="28px" height="27px"> </a>
+                </div>           
             </div>
-            <a style="margin-left: 100px;" href="">Forgot password? </a> <br><br>
-            <input style="align-self: center;"type="button" onclick="validate()" value="Login"/><br>
-            <div id="div3">
-            
-                <hr id="hr1"  />
-            
-            
-                  <span style="margin-left: 10px;">or</span>
-    
-                <hr id="hr2"  />
-            </div>
-            <div>
-            <a href=""> <img  id="google_icon" style="margin-left: 90px;"onclick="" src="./google_icon.png" title="Click to login using google"width="20px" height="20px"> </a>  
-            <a href=""> <img  id="fb_icon" style="margin-left: 15px;" onclick="" src="./fb_icon.png" title="Click to login using facebook"width="20px" height="20px"> </a> 
-            <a href=""> <img  id="twitter_icon" style="margin-left: 15px;" onclick="" src="./twitter_icon.png" title="Click to login using twitter"width="28px" height="27px"> </a>
-        </div>
-            
-            
-        </div>
         </form>
     </body>
 </html>
