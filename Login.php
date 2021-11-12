@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Login Page</title>
+                    <!-- hello -->
         <script>
             function validate()
             {
@@ -72,6 +73,7 @@
             {
                 window.location="./Register.php";
             }
+
             function myFunction() 
                 {
                     var x = document.getElementById("pswd");
@@ -89,6 +91,7 @@
                     }
                 }
         </script>
+
         <style>
          
          body
