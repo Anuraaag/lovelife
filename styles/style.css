@@ -1,0 +1,181 @@
+/* login.php starts  */
+    #b
+         {
+             /* background-color: #F5F5DC; */
+             background-image:url("../images/heart_background.jpeg");   
+             background-position: 0px 60px;
+             background-size: cover;
+             
+
+         }
+            .heading, #heading{
+                margin:-8px;
+                padding-left: 60px;
+                font-size: 40px;
+                font-style:italic;
+                font-family:'papyrus';
+                 background-color: E6E6FA; 
+                
+            }
+           
+            #form_heading_login
+         {
+             display: flex;
+             margin-top: -10px;
+             font-weight: bold;
+             font-size: 20px;
+             align-self: center;
+         }
+            #login_form
+         {
+             display: flex;
+             width: 1345px;
+             height: 590px;
+             margin-left: -6px;
+             margin-top: 8px;
+             margin-bottom: 200px;
+             background-size: 1345px 590px; 
+             
+         }
+       
+            #fields_login
+            {
+                background-color:E6E6FA;
+                margin:15px 20px 100px 900px;
+                border:2px solid grey;
+                border-radius: 5px;
+                display:flex;
+                flex-wrap: nowrap;
+                flex-direction:column;
+                align-items:flex-start;
+                width:380px;
+                height:480px;
+                padding: 50px 10px 10px 20px;
+                font-size: 18px;
+           
+            
+         }   
+
+         #fields_login>input{
+            margin: 25px 2px 2px 2px;
+           width: 300px;
+            font-size: 18px;
+         }   
+         #div2>input{
+            margin: 2px 2px 4px 2px;
+            width: 300px;
+            font-size: 18px;
+         }  
+         a{
+             text-decoration: none;
+             color:dodgerblue;
+            
+         }
+         #div3
+         {
+           display: flex;
+           
+           
+          
+         }
+         #login{
+            font-size: 20px;
+         }
+         #register{
+             font-size: 18px;
+            margin-left: 200px;
+         }
+         #div4
+         {
+           display: flex;
+          
+         }
+         #hr1
+         {
+             width: 160px;
+             margin-left: 0%;
+             
+             
+         }   
+         #hr2
+         {
+            width: 170px;
+            
+             margin-left: 10px;
+            
+             
+         }
+
+         /* login.php ends  */
+
+         /* register.php starts  */
+
+
+            
+            #form_heading_register
+         {
+             margin-top: 10px;
+             display: flex;
+             font-weight: bold;
+             font-size: 20px;
+             align-self: center;
+         }
+         #registration_form
+         {
+             display: flex;
+             margin-left: 50px;
+             margin-top: 80px;
+             margin-bottom: 200px;
+             width: 1230px;
+             height: 400px;
+         }
+            #fields_register{
+            background-color:E6E6FA;
+            margin:-58px -28px 100px 845px;
+            border:2px solid grey;
+            border-radius: 5px;
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start;
+            width:500px;
+            height:522px;
+            padding: 10px;
+            font-size: 18px;
+            
+           
+         }   
+
+         #fields_register>input{
+            margin: 2px 2px 2px 2px;
+           width:300px;
+            font-size: 18px;
+            
+         }   
+         #div2
+         {
+            display: flex;
+
+            
+         }
+       
+         #div2>*,#div3{
+             
+            margin: 2px 2px 2px 2px;
+            
+            font-size: 18px;
+         }   
+        
+         #pass_info{ 
+             margin: 20px 20px 100px 370px ;
+             display: none;
+            height:fit-content;
+            width:fit-content;
+            font-size: medium;
+         }
+         
+        #div4
+        {
+           display: flex;
+        }
+          
+       /* register.php ends  */

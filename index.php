@@ -1,5 +1,6 @@
 <html>
     <head>
+        
         <title>Home Page</title>
         <script>
             function GoToRegister()
@@ -94,7 +95,7 @@
          .buttons{
              display:flex;
              
-             align-self: center;
+             align-self:center;
              font-size: 20px;
             
          }
