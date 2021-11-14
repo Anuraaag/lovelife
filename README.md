@@ -1,9 +1,2 @@
 # LoveLife
-Test1
-
-
-COMMIT
--> GITHUB PE DAALNI HAI
-
-PUSH
-PULL
+Hello
