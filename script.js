@@ -2,10 +2,9 @@
 
 function GoToRegister()
 {
-    //window.location="./Register.php";
-    let s='<?php include($_SERVER["DOCUMENT_ROOT"]."./register.php");?>'
-    document.getElementById("mypage").=s;
+    window.location="index.php?p=login";
 }
+
 function validate_login()
 {
     var str="";

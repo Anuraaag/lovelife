@@ -1,4 +1,4 @@
-/* login.php starts  */
+/* header starts  */
  
             .heading, #heading{
                 margin:-0.5rem;
@@ -6,10 +6,16 @@
                 font-size: 2rem;
                 font-style:italic;
                 font-family:'papyrus';
-                 background-color: E6E6FA; 
-                
+                 background-color: E6E6FA;     
             }
-           
+/* header ends  */
+
+/* common code for login, register and forget password starts  */
+
+
+/* common code for login, register and forget password ends  */
+
+/* login starts  */
             #form_heading_login
          {  
              font-weight: bold;
@@ -69,8 +75,6 @@
          }  
          #vis
          {
-            
-
             margin: 1.3rem 2rem 2rem -1.5rem;
          }
         
@@ -89,8 +93,6 @@
             display: flex;
             flex-wrap: nowrap; 
             margin:  -1rem 1rem 1rem 1rem 
-           
-          
          }
          
          #login{
@@ -168,9 +170,7 @@
             width:370rem;
             height:522rem;
             padding: 10rem;
-            font-size: 18rem;
-            
-           
+            font-size: 18rem;          
          }   
 
          #fields_register>input{
@@ -181,9 +181,7 @@
          }   
          #register_pswd_div
                  {
-            display: flex;
-
-            
+            display: flex;   
          }
        
          #register_pswd_div>*,#t_and_c_div{
