@@ -1,8 +1,14 @@
 // login.php scripts starting 
 
-function GoToRegister()
+function page_change(val)
 {
-    window.location="index.php?p=login";
+    if(val == 'login'){
+        window.location="index.php?p=login";
+    }
+
+    if(val=='forget_password'){
+        window.location="index.php?p=forget_password";
+    }
 }
 
 function validate_login()

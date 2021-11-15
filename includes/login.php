@@ -6,11 +6,11 @@
             <input id="pswd" name="pass" type=password placeholder="Password" required />
             <img id="vis" onclick="myFunction()" src="./images/invisible.png" title="Click to show/hide password" width="20rem" height="20rem">
         </div>
-        <a id="forgot_pswd" href="">Forgot password? </a> <br><br>
+        <a id="forgot_pswd" onclick="page_change('forget_password')">Forgot password? </a> <br><br>
 
         <div id="buttons_div">
             <input id="login" type="button" onclick="validate_login()" value="Login" /><br>
-            <input id="register" type="button" onclick="GoToRegister()" value="Register" /><br>
+            <input id="register" type="button" onclick="page_change('login')" value="Register" /><br>
         </div>
         <br>
         <div id="div4">

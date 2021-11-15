@@ -18,7 +18,11 @@
                 <?php
                     if($_GET['p']=="login"){
                         include($_SERVER["DOCUMENT_ROOT"] . "./includes/login.php");
-                    }else{
+                    }
+                    elseif($_GET['p']=="forget_password"){
+                        include($_SERVER["DOCUMENT_ROOT"] . "./includes/forget_password.php");
+                    }
+                    else {
                         include($_SERVER["DOCUMENT_ROOT"] . "./includes/register.php");
                     }
                 ?>
