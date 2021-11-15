@@ -8,7 +8,7 @@
 
 <body>
     <div id="landing_header">
-        <?php include($_SERVER["DOCUMENT_ROOT"] . "./includes/header.php"); ?>
+        <?php include($_SERVER["DOCUMENT_ROOT"] . "/includes/header.php"); ?>
     <div>
 
     <div id="landing_body">
