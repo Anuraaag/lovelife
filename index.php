@@ -8,7 +8,7 @@
 
 <body>
     <div id="landing_header">
-        <?php include($_SERVER["DOCUMENT_ROOT"] . "./includes/header.php"); ?>
+        <?php include($_SERVER["DOCUMENT_ROOT"] . "/includes/header.php"); ?>
     <div>
 
     <div id="landing_body">
@@ -17,9 +17,9 @@
             <div id="login_and_register">
                 <?php
                     if($_GET['p']=="login"){
-                        include($_SERVER["DOCUMENT_ROOT"] . "./includes/login.php");
+                        include($_SERVER["DOCUMENT_ROOT"] . "/includes/login.php");
                     }else{
-                        include($_SERVER["DOCUMENT_ROOT"] . "./includes/register.php");
+                        include($_SERVER["DOCUMENT_ROOT"] . "/includes/register.php");
                     }
                 ?>
             </div>
