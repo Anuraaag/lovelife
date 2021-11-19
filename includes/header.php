@@ -1,1 +1,3 @@
-<div class="heading">Love Life</div>
+<div>
+    <a href="./">Love Life</a>
+</div>

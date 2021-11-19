@@ -1,0 +1,12 @@
+@import url("../style.css");
+
+#tnc_main {
+  border-width: 0.2rem;
+  border-radius: 0.4rem;
+  border-style: solid;
+  border-color: rgb(230, 230, 230);
+  margin: 0.5%;
+  margin-top: 1%;
+  padding: 2%;
+  font-family: "Arial", Helvetica, sans-serif;
+}
