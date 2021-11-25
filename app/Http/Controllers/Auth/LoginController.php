@@ -5,6 +5,12 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+
+
+use Auth;
 
 class LoginController extends Controller
 {
@@ -37,5 +43,24 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+    }
+
+    public function login(Request $request)
+    {
+        $request->validate([
+            'login_id' => 'required',
+            'password' => 'required',
+        ]);
+     
+        if( gettype((int)$request['login_id']) === "integer" && (int)$request['login_id'] > 0)
+            $credentials = ['phone' => $request->login_id, 'password' => $request->password];
+        else  
+            $credentials = ['email' => $request->login_id, 'password' => $request->password];
+
+        if (Auth::attempt($credentials)){
+            return redirect()->route('home');
+        }
+        
+        return redirect("login")->withSuccess('Oops! You have entered invalid credentials');
     }
 }
