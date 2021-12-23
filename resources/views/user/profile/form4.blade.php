@@ -1,94 +1,62 @@
-<div class="p-5 col-8">
-    <div class="input-group">
-        <div class="input-group-text rounded-start">
-            <input class="form-check-input mt-0 " type="radio" value="friendship" name="lookingFor"
-            aria-label="Radio button for following text input" id="lookingfor1" /> 
+<div class="mb-4 ms-5">
+    <h4> I am looking for </h4>
+    <div class="p-4 col-8">
+        <div class="input-group">
+            <div class="input-group-text rounded-start">
+                <input class="form-check-input mt-0 " type="radio" value="friendship" name="lookingFor"
+                aria-label="Radio button for following text input" id="lookingfor1" /> 
+            </div>
+            <label for="lookingfor1" class="form-control me-5 rounded-end"> Friendship </label>
+        
+            <div class="input-group-text rounded-start">
+                <input class="form-check-input mt-0 " type="radio" value="dating" name="lookingFor"
+                aria-label="Radio button for following text input" id="lookingfor2" />
+            </div>
+            <label for="lookingfor2" class="form-control me-5 rounded-end"> Dating </label>
+        
+            <div class="input-group-text rounded-start">
+                <input class="form-check-input mt-0 " type="radio" value="marriage" name="lookingFor"
+                aria-label="Radio button for following text input" id="lookingfor3" />
+            </div>
+            <label for="lookingfor3" class="form-control me-5 rounded-end"> Marriage </label>
         </div>
-        <label for="lookingfor1" class="form-control me-5 rounded-end"> Friendship </label>
-    
-        <div class="input-group-text rounded-start">
-            <input class="form-check-input mt-0 " type="radio" value="dating" name="lookingFor"
-            aria-label="Radio button for following text input" id="lookingfor2" />
-        </div>
-        <label for="lookingfor2" class="form-control me-5 rounded-end"> Dating </label>
-    
-        <div class="input-group-text rounded-start">
-            <input class="form-check-input mt-0 " type="radio" value="marriage" name="lookingFor"
-            aria-label="Radio button for following text input" id="lookingfor3" />
-        </div>
-        <label for="lookingfor3" class="form-control me-5 rounded-end"> Marriage </label>
     </div>
 </div>
 
-
-{{--    <div class="form-group col-md-8 col-sm-12 col-xs-12 mb-5" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
-        <div class="row mb-4">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <input class="form-control pic" accept=".jpg, .jpeg, .png" id="image1" type="file" name="image1">
-                    <label for="image1">
-                        <img id="image1_preview" src="{{ asset('storage/images/blank.jpg') }}" class="preview">
-                    </label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <input class="form-control pic" accept=".jpg, .jpeg, .png" id="image2" type="file" name="image2">
-                    <label for="image2">
-                        <img id="image2_preview" src="{{ asset('storage/images/blank.jpg') }}" class="preview">
-                    </label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <input class="form-control pic" accept=".jpg, .jpeg, .png" id="image3" type="file" name="image3">
-                    <label for="image3">
-                        <img id="image3_preview" src="{{ asset('storage/images/blank.jpg') }}" class="preview">
-                    </label>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <input class="form-control pic" accept=".jpg, .jpeg, .png" id="image4" type="file" name="image4">
-                    <label for="image4">
-                        <img id="image4_preview" src="{{ asset('storage/images/blank.jpg') }}" class="preview">
-                    </label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <input class="form-control pic" accept=".jpg, .jpeg, .png" id="image5" type="file" name="image5">
-                    <label for="image5">
-                        <img id="image5_preview" src="{{ asset('storage/images/blank.jpg') }}" class="preview">
-                    </label>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail">
-                    <input class="form-control pic" accept=".jpg, .jpeg, .png" id="image6" type="file" name="image6">
-                    <label for="image6">
-                        <img id="image6_preview" src="{{ asset('storage/images/blank.jpg') }}" class="preview">
-                    </label>
-                </div>
-            </div>
+<div class="ms-5 mb-5">
+    <h4>Gender(s) of my Interest</h4>
+    <div class="col-8">
+        <div class="d-flex flex-wrap" data-toggle="buttons">
+            <label class="btn btn-light rounded-pill active mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Agender</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Androgynous</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Bigender</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Cis Man and Cis Woman</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Genderfluid</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Genderqueer</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Gender Nonconforming</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Hijra</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Intersex</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Man</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Non-binary</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Pangender</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Transfeminine</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Transgender</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Trans Man</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Transmasculine</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Transsexual</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Trans Woman</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Two Spirit</label>
+            <label class="btn btn-light rounded-pill mx-3 my-3 py-3"><input type="checkbox" class="checkButtons"> Woman</label>
         </div>
     </div>
+</div>
 
-    <div class="form-group col-md-8 col-sm-12 col-xs-12" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
-        <div style="flex-basis: 33.33%;">
-            <button style="float: left" class="btn btn-primary" type="button"><i class="fas fa-chevron-circle-left me-2"></i>Previous</button>
-        </div>
-
-        <div style="flex-basis: 33.33%;">
-            <button class="btn btn-primary" id="reset" type="button">Reset Photos</button>
-        </div>
-        
-        <div style="flex-basis: 33.33%;">
-            <button style="float: right" class="btn btn-primary" type="button">Next <i class="fas fa-chevron-circle-right ms-2"></i></button>
-        </div>    
+<div class="form-group col-md-8 col-sm-12 col-xs-12 ms-5" style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+    <div style="flex-basis: 45%;">
+        <button class="btn btn-primary float-start prev" id="prev-three" type="button"><b><i class="fas fa-chevron-circle-left me-2"></i>Previous</b></button>
     </div>
-
---}}
+    
+    <div style="flex-basis: 45%;">
+        <button class="btn btn-primary float-end next" id="next-five" type="button"><b>Next <i class="fas fa-chevron-circle-right ms-2"></i></b></button>
+    </div>    
+</div>

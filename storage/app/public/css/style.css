@@ -1,0 +1,79 @@
+/* image form2 start */
+img:hover {
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03); 
+}
+
+.preview{
+    transition: transform 0.3s;
+    width: 100%;
+}
+/* image form2 end */
+
+
+/* pills form3 start */
+label.active{
+    background-color: #1266F1 !important;
+    color: #FFFFFF !important;
+}
+
+label{
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+input.checkButtons, input.radioButtons{
+    display: none !important;
+}
+
+select {
+    color: #1266F1 !important;
+    text-align: center;
+}
+/* pills form3 start */
+
+
+/* auto complete form5 start */
+.autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #D4D4D4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #D4D4D4;
+  }
+  
+  .autocomplete-items div:hover {
+    background-color: #E9E9E9;
+  }
+  
+  .autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #FFFFFF;
+  }
+  /* auto complete form5 end */
+
+  /* form5 start */
+  input[readonly='readonly']{
+      background-color: #FFFFFF !important;
+  }
+  /* form5 end */
+
+.point{
+    cursor: pointer;
+}
