@@ -7,7 +7,7 @@
         <div class="col-3">
             <div class="list-group" id="list-tab" role="tablist">
 
-                <a class="list-group-item d-flex list-group-item-action justify-content-between align-items-center py-3" id="list-one-list" 
+                <a class="list-group-item d-flex list-group-item-action justify-content-between active align-items-center py-3" id="list-one-list" 
                 data-bs-toggle="list" href="#list-one" role="tab" aria-controls="list-one"> Personal Information
                 <span class="badge bg-success rounded-pill"><i class="fa fa-check"></i></span></a>
                             
@@ -23,7 +23,7 @@
                 data-bs-toggle="list" href="#list-four" role="tab" aria-controls="list-four"> Looking For
                 <span class="badge bg-success rounded-pill"></span></a>
 
-                <a class="list-group-item d-flex list-group-item-action justify-content-between active align-items-center py-3" id="list-five-list" 
+                <a class="list-group-item d-flex list-group-item-action justify-content-between align-items-center py-3" id="list-five-list" 
                 data-bs-toggle="list" href="#list-five" role="tab" aria-controls="list-five"> Address
                 <span class="badge bg-success rounded-pill"></span></a>
 
@@ -37,7 +37,7 @@
             <form action="/customers" method="POST">
                
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade" id="list-one" role="tabpanel" aria-labelledby="list-one-list">
+                    <div class="tab-pane fade show active" id="list-one" role="tabpanel" aria-labelledby="list-one-list">
                         @include('user.profile.form1') 
                     </div>
                     <div class="tab-pane fade" id="list-two" role="tabpanel" aria-labelledby="list-two-list">
@@ -49,7 +49,7 @@
                     <div class="tab-pane fade" id="list-four" role="tabpanel" aria-labelledby="list-four-list">
                         @include('user.profile.form4') 
                     </div>
-                    <div class="tab-pane fade show active" id="list-five" role="tabpanel" aria-labelledby="list-five-list">
+                    <div class="tab-pane fade" id="list-five" role="tabpanel" aria-labelledby="list-five-list">
                         @include('user.profile.form5') 
                     </div>
                     <div class="tab-pane fade" id="list-six" role="tabpanel" aria-labelledby="list-six-list">
@@ -170,11 +170,11 @@
 
             // destroying the pills and repopulating datalist
             let disability_pills = document.getElementsByClassName("disability_pill")
-            Object.values(disability_pills).forEach( pill => {    
+            Object.values(disability_pills).forEach( pill => {
                 pill.addEventListener('click', function(){
                     Object.values(datalist_options).forEach( option => {   
                         if (option.value.toLowerCase() == pill.innerText.toLowerCase()){
-                            // console.log(option)
+                            // console.log(option) // A weird behaviour of console.log()
                             option.disabled = false
                             // console.log(option)
                         }
@@ -311,13 +311,14 @@
                 }
               })
         
-            let main_address
-            main_address = address['name'] ? address['name'] : ""
-            main_address += address['street'] ? ", "+address['street'] : ""
-            main_address += address['suburb'] ? ", "+address['suburb'] : ""
+            let place = address['name'] ? address['name'] : ""
+            place += place != "" ? ", " : ""
+            place += address['street'] ? address['street'] : ""
+            place += place != "" ? ", " : ""
+            place += address['suburb'] ? address['suburb'] : ""
         
-            if(main_address != "") {
-                getElement(`address`).value = main_address	
+            if(place != "") {
+                getElement(`address`).value = place	
             }
             else{
                 getElement(`address`).readOnly = false

@@ -18,7 +18,8 @@ class User extends Authenticatable
      * @var string[]
      */
     protected $fillable = [
-        'name',
+        'first_name',
+        'last_name',
         'email',
         'phone',
         'password',
@@ -41,6 +42,17 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'email_verified_at' => 'datetime',
+        'email_verified_at' => 'datetime',        
+        'phone_verified_at' => 'datetime',
     ];
 }
+
+// $table->string('username')->unique()->nullable();
+// $table->string('alias')->unique()->nullable();
+// $table->string('gender')->nullable();
+// $table->timestamp('birth_date')->nullable();
+// $table->string('about')->nullable();
+// $table->tinyInteger('looking_for')->nullable();
+// $table->string('personality_type')->nullable();
+
+// $table->timestamps();

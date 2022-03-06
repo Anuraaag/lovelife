@@ -62,5 +62,7 @@ class LoginController extends Controller
         }
         
         return redirect("login")->withSuccess('Oops! You have entered invalid credentials');
+        // will be error instead of success. Also check if session-message is to be flashed explicitely.
+        // check if this gives a variable to the blade 
     }
 }

@@ -13,12 +13,12 @@
         </div>
     </div>
     
-    <div class="col-12">
+    {{--<div class="col-12">
         <h4> Drop your Interests </h4>
-        {{--<!-- will implement this after the backend. Current plan is to 
+        <!-- will implement this after the backend. Current plan is to 
             make a table of interests. And on every keydown event in form, an 
-        async call can be made to show the respective suggestions -->--}}
-    </div>
+        async call can be made to show the respective suggestions -->
+    </div>--}}
 </div>
 
 <datalist id="disability">
